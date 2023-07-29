@@ -8,8 +8,9 @@ const path=require('path');
 const seedDB = require('./seed');
 const quoteRoute= require('./routes/quoteRoute')
 const methodOverride = require('method-override')
+const DB_URL= mongodb://127.0.0.1:27017/hackathon_3
 
-mongoose.connect('mongodb://127.0.0.1:27017/hackathon_3')
+mongoose.connect(DB_URL)
 .then(()=>{console.log('DB connected')})
 .catch((err)=>{console.log(err)})
 
