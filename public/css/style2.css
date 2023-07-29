@@ -1,0 +1,77 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+nav{
+    background-color: rgb(7, 81, 7);
+    display: flex;
+    position: relative;
+    width: 130vw;
+    height: 70px;
+    padding-bottom: 10px;
+}
+#a1{
+    position: relative;
+    text-decoration: none; 
+    font-size:35px; 
+    font-weight: bold; 
+    color: white; 
+    left:15vw; 
+    top: 5px;
+}
+#a2{
+    position: relative; 
+    text-decoration: none; 
+    font-size:23px; 
+    font-weight: bold;
+    color: white; 
+    left: 50vw; 
+    top: 9px;
+}
+#a3{
+    position: relative; 
+    text-decoration:none; 
+    font-size:23px; 
+    font-weight: bold; 
+    color: white; 
+    left:55vw; 
+    top: 9px;
+}
+
+#container{
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    background-color: green;
+    border-radius: 12px;
+    box-shadow: 3px 3px 3px gray;
+    margin-top: 20px;
+
+}
+#btn{
+    width: 10vw;
+    height: 30px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 10px;
+}
+#container>label,input{
+    margin-bottom:10px ;
+}
+
+#container>div{
+    font-size: 20px;
+}
+#newquote{
+    margin-top: 10px;
+}

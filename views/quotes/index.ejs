@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav>
+        <div><a href="#" id="a1">Great Quotes</a></div>
+        <div><a href="http://localhost:8000/quotes" id="a2">All Quotes</a></div>
+        <div><a href="http://localhost:8000/quotes/new" id="a3">New Quotes</a></div>
+    </nav>
+
+    <div id="main">
+        <h1 style="padding-left: 10px;">All Quotes</h1>
+        <div id="container">
+            <% for (let i of quotes) { %>
+                <div>
+                    <div>
+                        <li type="none">
+                        <h3 style="text-transform: uppercase;"><%=i.quote%></h3>
+                        <h4 style="text-transform: capitalize;">~<%=i.author%></h4></li>
+                    </div>
+                    <div id="view"><a href="/quotes/<%=i._id%>">View full Quote</a></div>
+                    
+                </div>
+
+            <% } %>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
